@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 48px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.colour {
+  background-color: white;
+  width: 104.47px;
+  height: 54px;
+  padding: 5px 6px 5px 6px;
+}
+
+.input {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 25px;
+  gap: 10px;
+}
+
+.settings p {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: -5px;
+  margin-top: -10px;
+}
+
+#gridSize {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3;
+  opacity: 0.75;
+  -webkit-transition: .2;
+  transition: opacity .2s;
+  outline: none;
+}
+
+#gridSize:hover {
+  opacity: 1;
+}
+
+#gridSize::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+
+.size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
+  justify-self: center;
+  border: 4px solid black;
+  margin-top: 10px;
+}
+
+.gridEl{
+  width: 100px;
+  height: 100px;
+
+}
+
+.lines {
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.7;
+  box-sizing: border-box;
+}

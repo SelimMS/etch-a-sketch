@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Etch a Sketch</h1>
+    <div class="settings">
+      <p>Choose Colour and Grid Size</p>
+      <div class="input">
+        <input type="color" id="colour" value="#FF0000" class="colour">
+        <button id="eraser" class="eraser">Eraser</button>
+      </div>
+      <div class="size">
+        <button id ='lines' id="#lines">Lines</button>
+        <label for="gridSize" id="gridInput">Grid Size: </label>
+        <input type="range" min="10" max="64" step="1" id="gridSize" name="gridSize">
+        <button id ='reset' class="reset">Reset</button>
+      </div>
+    </div>
+    <div class="container" id="container">
+
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
