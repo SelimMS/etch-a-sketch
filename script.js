@@ -6,7 +6,7 @@ const gridInput = document.querySelector('#gridInput')
 const gridInputSize = document.querySelector('#gridSize')
 const eraser = document.querySelector('#eraser')
 let colour = colourPicker.value;
-let gridSize = 32;
+let gridSize = 20;
 
 eraser.addEventListener('click', (e) => {
   colour = '#FFFFFF'
@@ -22,7 +22,7 @@ function generateGrid(num) {
   let grid = num * num
   for (let i = 0; i < grid; i++) {
     const gridDiv = document.createElement('div')
-    let size = 960/num
+    let size = 650/num
     container.classList.add('grid')
     gridDiv.classList.add('gridEl')
     gridDiv.style.width = `${size}px`
@@ -52,7 +52,7 @@ reset.addEventListener('click', () => {
   location.reload()
 })
 
-gridInput.textContent = '32 x 32';
+gridInput.textContent = `${gridSize} x ${gridSize}`;
 gridInputSize.addEventListener("input", (e) => {
   gridInput.textContent = `${e.target.value} x ${e.target.value}`;
 })
